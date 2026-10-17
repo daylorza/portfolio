@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title description">
+  <title id="title">Haven</title>
+  <desc id="description">A simple text graphic for Haven, an AI employee for real estate teams.</desc>
+  <rect width="1200" height="900" fill="#111925"/>
+  <rect x="62" y="62" width="1076" height="776" fill="none" stroke="#233040" stroke-width="2"/>
+  <circle cx="116" cy="119" r="9" fill="#59e1d2"/>
+  <text x="144" y="126" fill="#99a6b5" font-family="monospace" font-size="25" letter-spacing="4">LIVE DEPLOYMENT</text>
+  <text x="98" y="475" fill="#f3f0e9" font-family="Arial, sans-serif" font-weight="700" font-size="152" letter-spacing="-8">Haven</text>
+  <path d="M100 519h280" stroke="#ff775f" stroke-width="8"/>
+  <text x="100" y="618" fill="#99a6b5" font-family="monospace" font-size="29" letter-spacing="3">AI EMPLOYEE / REAL ESTATE</text>
+</svg>
