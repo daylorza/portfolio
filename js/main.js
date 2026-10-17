@@ -36,32 +36,3 @@ const sectionObserver = new IntersectionObserver((entries) => {
   });
 }, { rootMargin: '-35% 0px -55% 0px' });
 sections.forEach((section) => sectionObserver.observe(section));
-
-const contactForm = document.querySelector('#contact-form');
-const formStatus = document.querySelector('#form-status');
-
-contactForm?.addEventListener('submit', async (event) => {
-  event.preventDefault();
-  const submitButton = contactForm.querySelector('button[type="submit"]');
-  submitButton.disabled = true;
-  formStatus.className = 'form-status';
-  formStatus.textContent = 'Sending…';
-
-  try {
-    const response = await fetch(contactForm.action, {
-      method: 'POST',
-      body: new FormData(contactForm),
-      headers: { Accept: 'application/json' },
-    });
-    const result = await response.json();
-    if (!response.ok) throw new Error(result.message || 'Unable to send your message.');
-    contactForm.reset();
-    formStatus.className = 'form-status success';
-    formStatus.textContent = result.message;
-  } catch (error) {
-    formStatus.className = 'form-status error';
-    formStatus.textContent = error.message || 'Something went wrong. Please try again.';
-  } finally {
-    submitButton.disabled = false;
-  }
-});

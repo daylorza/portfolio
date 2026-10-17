@@ -165,7 +165,7 @@
         <p>05 / CONTACT</p>
         <h2>Have a difficult product<br>problem? <em>Let's solve it.</em></h2>
         <p class="contact-copy">Available for senior frontend and full-stack contracts, product engineering engagements, and select AI or Web3 builds.</p>
-        <form class="contact-form" id="contact-form" action="contact.php" method="post">
+        <form class="contact-form" id="contact-form" name="contact" action="/" method="post" data-netlify="true" netlify-honeypot="website">
           <div class="form-grid">
             <label><span>Name</span><input type="text" name="name" autocomplete="name" maxlength="100" required></label>
             <label><span>Email</span><input type="email" name="email" autocomplete="email" maxlength="160" required></label>
@@ -179,10 +179,8 @@
           <label class="form-trap" aria-hidden="true">Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
           <div class="form-footer">
             <button class="button primary" type="submit">Send inquiry <span>↗</span></button>
-            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
           </div>
         </form>
-        <p class="contact-email">Use the form above to get in touch.</p>
         <div class="contact-meta"><span>Miami, Florida</span><span>Remote worldwide</span><span>© 2026 Dayana Lorza <a class="archive-egg" href="archive/" aria-label="View previous portfolio versions" title="Previous versions">🥚</a></span></div>
       </div>
     </section>

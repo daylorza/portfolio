@@ -16,20 +16,11 @@ Personal portfolio site for Dayana Lorza.
 
 The small 🥚 beside the copyright on the current site links to the archive.
 
-## Local preview
+## Deployment and contact form
 
-The site can be opened directly in a browser for a static preview. The contact form requires a PHP-capable server and will not send from a `file://` URL or a static-only host.
+Netlify deploys the `master` branch from this repository. The site is static; no PHP server is needed. The contact form uses Netlify Forms with a honeypot field. Form submissions appear in the site's **Forms** dashboard after form detection processes the next deployment. Configure submission notifications in Netlify if email alerts are wanted.
 
-## Contact form configuration
-
-The contact handler in `contact.php` deliberately contains no personal email address. Configure these environment variables on the hosting server before enabling the form:
-
-```text
-PORTFOLIO_CONTACT_RECIPIENT=your-recipient@example.com
-PORTFOLIO_CONTACT_FROM=no-reply@example.com
-```
-
-Without both values, the form returns a safe “not configured” response.
+The site can be opened directly in a browser for a visual preview. Form submissions work on the deployed Netlify site, not from a `file://` preview.
 
 ## Privacy
 
